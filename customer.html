@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Customer Form" />
+    <meta name="keywords" content="---------" />
+    <meta name="author" content="Kyle Sincennes Winch" />
+    <style type="text/css" id="operaUserStyle"></style>
+    <header>
+        <p>Name:Kyle Sincennes Winch</p>
+        <p>Date:2/5/2023</p>
+        <p>Section: CST82825 - 300</p>
+        <p>Lab: 02</p>
+        <p>file:customer.html</p>
+        <p>To create a submission form for clients to demonstrate our understanding of html</p>
+      </header>
+  </head>
+  <body>
+    <h1 style="color: blue">Customer Registration</h1>
+    <form action="process.php" method="get" enctype="text/plain">
+      <fieldset>
+        <legend>1. User Information</legend>
+        <label for="firstName">First Name</label><br />
+        <input
+          type="text"
+          id="firstName"
+          name="First Name"
+          maxlength="10"
+          required
+        />
+        <br />
+        <label for="lastName">Last Name</label><br />
+        <input type="text" id="lastName" name="Last Name" readonly />
+        <br />
+        <label for="email">Enter your email:</label><br />
+        <input type="email" id="email" name="email" required />
+        <br />
+        <br />
+        <label for="pass">Password: </label><br />
+        <input
+          type="password"
+          name="secret"
+          id="pass"
+          size="11"
+          placeholder="min 8 characters"
+        />
+        <br />
+        <label for="pass2">Password Repeat: </label><br />
+        <input
+          type="password"
+          name="secret"
+          id="pass2"
+          size="11"
+          placeholder="min 8 characters"
+        />
+      </fieldset>
+      <br />
+      <fieldset style="white-space: nowrap">
+        <legend>2. Location</legend>
+        <label for="address">Address</label><br />
+        <input type="text" id="address" name="address" size="25" />
+        <br />
+        <br />
+        <label for="City">City</label><br />
+        <input type="text" id="City" name="City" size="10" />
+        <br />
+        <br />
+        <label for="Province">Province</label><br />
+        <input type="text" id="Province" name="Province" size="10" />
+        <br />
+        <br />
+        <label for="PostalCode">Postal Code</label><br />
+        <input type="text" id="PostalCode" name="PostalCode" size="10" />
+        <br />
+        <br />
+        <label for="PhoneNum">Phone Number</label><br />
+        <input
+          type="text"
+          id="PhoneNum"
+          name="PhoneNum"
+          size="10"
+          placeholder="111-222-3333"
+        />
+        <br />
+        <br />
+        <label for="Country">Country</label><br />
+        <select name="Country" id="Country" multiple size="2">
+          <option value="Canada">Canada</option>
+          <option value="United States">United States</option>
+          <option value="Mexico">Mexico</option>
+          <option value="United Kingdom">United Kingdom</option>
+          <option value="Belgium">Belgium</option>
+          <option value="Germany">Germany</option>
+          <option value="Russia">Russia</option>
+          <option value="Ukraine">Ukraine</option>
+          <option value="Other">Other</option>
+        </select>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>3. Personal Details</legend>
+        <label for="BirthDay">BirthDay</label><br />
+        <input type="date" id="BirthDay" name="appt-date" />
+        <br />
+        <br />
+        <label for="favColor">Color </label>
+        <br />
+        <input type="color" name="bg-color" id="favColor" value="#ff6347" />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>4. Final Section</legend>
+        <label for="submit"> Submit</label>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <br>
+        <label for="checkbox"> Do you agree to the websites terms of service?</label>
+        <input type="checkbox" name="agreement" id="checkbox" />
+      </fieldset>
+    </form>
+  </body>
+</html>
